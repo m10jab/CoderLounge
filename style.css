@@ -24,20 +24,20 @@ header{
     
    
 }
-header ul{ 
+header span{ 
 display: flex;
 justify-content: center;
 align-items: center ;
 
 
 }
-header ul li{
+header span li{
     list-style: none;
     margin-left: 20px;
 }
-header ul li a{
+header span li a{
     text-decoration: none;
-    padding: 6px 45px;
+    padding:  6px 2px;
     color: #fff;
     border-radius: 20px;
 
@@ -71,10 +71,141 @@ header ul li a{
 
 }
 
-@keyframes typing{
-    100%{
-        left: 100%;
-        margin: 0 -35px 0 35px;
+@media (max-width: 580px ) {
+    @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        
     }
+    body{
+        min-height:  100vh;
+        background: linear-gradient(#000000,#131300);
+    
+    }
+    header{
+       background-color: #000000;
+       display: none;
+       
+    }
+    header span{ 
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    
+    
+    }
+    .logo {
+        display: none;
+    }
+    header span li{
+        list-style: none;
+        margin-left: 20px;
+    }
+    header span li a{
+        text-decoration: none;
+        padding:  6px 2px;
+        color: #fff;
+        border-radius: 20px;
+    
+    }
+    
+    .btns a:hover
+    {
+        background: #fff;
+        color: #131313;
+    }
+    .name{
+        position: relative;
+        
+        font-size: 25px;
+        padding: 150px;
+        
+        display: flex;
+        justify-content: center;
+        color: #fff;
+    
+    }
+    .dynamic-txts {
+        position: relative;
+        
+        
+        padding: 0px;
+        
+        display: flex;
+        justify-content: center;
+        color: #fff;}
 
+        @media (max-width: 417px ) {
+            @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+            *
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+                
+            }
+            body{
+                min-height:  100vh;
+                background: linear-gradient(#000000,#131300);
+            
+            }
+            header{
+               background-color: #000000;
+                display: none;
+               
+            }
+            .logo{
+                display: none;
+            }
+            header span{ 
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+            
+            
+            }
+            header span li{
+                list-style: none;
+                margin-left: 20px;
+            }
+            header span li a{
+                text-decoration: none;
+                padding:  6px 2px;
+                color: #fff;
+                border-radius: 20px;
+            
+            }
+            
+            .btns a:hover
+            {
+                background: #fff;
+                color: #131313;
+            }
+            .name{
+                position: relative;
+                
+                font-size: 16px;
+                padding: 150px;
+                
+                display: flex;
+                justify-content: center;
+                color: #fff;
+            
+            }
+            .dynamic-txts {
+                position: relative;
+                font-size: 15px;
+                
+                padding: 0px;
+                
+                display: flex;
+                justify-content: center;
+                color: #fff;
+            
+        }}
 }
