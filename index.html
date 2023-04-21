@@ -17,31 +17,62 @@
 <body>
     <img class="logo"  width="150" src="logoc.jpg" alt="">
 <header>
-  <p></p>
     <span>
     
+    
     <li class="btns"><a href="#home">Home</a></li>
-    <li class="btns"><a href="#about">About as</a></li>
-    <li class="btns"><a href="#contact">Contact us</a></li>
-    <li class="lang"><a href="#langar"><img src="lang_ksa.png" alt=""></a></li>
+    <li class="btns"><a href="#About">About as</a></li>
+    <li class="btns"><a href="#Contact">Contact us</a></li>
+    <li class="lang"><a href="http://127.0.0.1:5500/index2.html"><img src="lang_ksa.png" alt=""></a> </li>
 
+    </span>
     </header>
-</span>
-<section>
+<div id="mobile" onclick="toggleMobileMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <ul class="mobile-menu">
+        <li class="btns"><a href="#home">Home</a></li>
+    <li class="btns"><a href="#About">About as</a></li>
+    <li class="btns"><a href="#Contact">Contact us</a></li>
+    <li class="lang"><a href="http://127.0.0.1:5500/index2.html">Arabic </a></li>
+
+    </ul>
+</div>    
+
+
     <h1 class="name">Coder Lounge</h1>
     <div class="container"><h1  style="font-size: 35px; " class="dynamic-txts auto-type"></h1></div>
-</section>
-    
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+    <h2  id="home"class="text-white hom">Home</h2>
+    <p class="text-white hom"style="">coming soon </p>
+
+    <h2 id="About" class="text-white abu" >About as</h2>
+    <p  class="text-white abu"style=" ">Who we are: A technical initiative launched by passionate male and female students that contributes to helping students choose their technical field, attracting innovators, enriching technical content, and being a starting point for technical initiatives.</p>
+    <h2 id="Contact"class="text-white cont" > Contact us</h2>
+    <a class="email" href="mailto:coder0lounge@gmail.com"><img src="emali logo.png" width="50" alt=""></a>
+    <a href="https://twitter.com/_coderlounge/"><img src="twitter logo.png" width="50" alt=""></a>
+    <h2 class=" text-white cont">To join us <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOkUmlht1J7jbKTqrJ0WfOJDykABmTKF85P9fhDtzMEWE5Hg/viewform">Click</a></h2>
+        
+                
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
+
+</script>
 <script>
     var typed = new Typed(".auto-type",{
         strings: ["Technical information" ,"Programming","learning","development","empowerment"],
-        typeSpeed: 70,
-        backSpeed: 70,
+        typeSpeed: 50,
+        backSpeed: 50,
         loop: true
 
     })
+    function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
 </script>
+
+
 
 </body>
 </html>
